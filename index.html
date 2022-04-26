@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>My Portfolio</title>
+</head>
+<body >
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Jayneel Shah</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    
+    <section class="home">
+    </section>
+    <main>
+    <div style="height: 1000px">
+        <section id="about">
+            <br> <br> <br> <br>
+            <img src="images/jayneel.png" alt="profile picture" height="250px" width="250px" class="center">
+            <h2 class="myH2">Hello!</h2>
+
+            <p class="myP">
+                I am a student at Institute of Technology, Nirma University studying Computer Science.
+            </p>
+            <ul class="myBullets">
+                    <li>
+                        I am always looking for new challenges and learning new things.
+                    </li>
+                    <li>
+                        Things that describe me best are: Determination, Dilligence and Passion.
+                    </li>
+                    <li>
+                        Reading books and writing blogs are my hobbies.
+                    </li>
+            </ul>
+            <br> <br>
+            <hr>
+        </section>
+        <section id="skills">
+            <div class="skills">
+                <br> <br> <br> <br>
+                <h2 class="myH2">My Skills.</h2>
+                <div class="skill-row">
+                  <img class="img" src="images/skills.png" alt="skills img">
+                  <h3 class="myH3">Interpersonal Skills</h3>
+                  <p>
+                    I am motivated and set my personal goals. I am also comfortable competing with other people and enjoy helping and listening to other people.
+                    I like to plan things and they are well organised.
+                  </p>
+                </div>
+                <div class="skill-row">
+                  <img class="img2" src="images/skills2.png" alt="skills2">
+                  <h3 class="myH3">Software Related Skills</h3>
+                  <p>
+                    I have a good hold in C, C++ and know about Java and Python languages. I am learning web development and have a keen interest in 
+                    Mathematics and related fields.
+                  </p>
+                </div>
+              </div>
+        </section>
+              <hr>
+            <section id="portfolio">
+                <br> <br> <br> <br>
+                <h2 class="myH2">Portfolio</h2>
+                <p class="myP">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+            </p>
+            </section>
+            <hr>
+        <section id="contact">
+            <br> <br> <br> <br>
+            <h2 class="myH2">Contact</h2>
+                    <form class="regform" action="/register" method="post">
+                        <div class="head">
+                            <h1>Fill The Form and reach out to me :)</h1>
+                        </div>
+                
+                        <div class="body" ng-app="Displaying" ng-contoller="myCtrl">
+                            <ul>
+                                <li>
+                                    <label class="title">First Name(*): </label>
+                                    <input type="text" id="fname" class="ip" ng-model="fname" required>
+                                    <br> <br>
+                                    <label class="title">Last Name(*): </label>
+                                    <input type="text" id="lname" class="ip" ng-model="lname" required ng-blur="myFunc()">
+                                    <br> <br>
+                                    <label class="title">Date Of Birth:</label>
+                                    <input type="date" id="dob" class="ip" ng-model="dob">
+                                    <br> <br>
+                                    <label class="title">Contact Number: </label>
+                                    <input type="text" id="pno" ng-model="phone">
+                                    <br> <br>
+                                    <input type="button" value="SUBMIT" > 
+                                </li>
+                            </ul>
+                            <p ng-if="fname != ''" class="myP"> Thank You for registering {{fname + ' ' + lname}}!</p>
+                        </div>
+                    </form>
+        </section>
+        <hr>
+        <br> <br> <br> <br>
+        <div class="bottom-container">
+            <a class="footer-link" href="www.linkedin.com/in/jayneel-m-shah">LinkedIn</a>
+            <a class="footer-link" href="https://twitter.com/thejayneelshah">Twitter</a>
+            <a class="footer-link" href="https://www.instagram.com/_jayneel_2507/">Instagram</a>
+            <a class="footer-link" href="https://github.com/jayneel-shah18">Github</a>
+            <p>© 2022 Jayneel Shah.</p>
+            <a class="top" href="#">Back to Top ↑</a>
+          </div>
+    </div>
+    
+</main>
+<script>
+    var thisApp = angular.module('Displaying', [])
+
+    thisApp.controller('myCtrl', function ($scope) {
+       
+        $scope.myFunc = function () {
+            $scope.name = $scope.fname + " " + $scope.lname;
+            console.log($scope.name);
+            alert("Hello " + $scope.name + "! You have successfully registered.");
+        }
+    })
+
+</script>
+
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+
